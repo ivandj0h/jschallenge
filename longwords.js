@@ -44,3 +44,31 @@ return longestWord;
 // keep this function call here 
 // console.log(LongestWord(readline()));
 console.log(LongestWord("i love dogs"));
+
+
+// The Other Answer
+/*
+function LongestWord(sen) { 
+
+  // code goes here
+  sen = sen.split(" ")
+  var longst = sen[0]
+
+  for(i=0; i<sen.length; i++) {
+    if(i == sen.length - 1) {
+      return longst
+    }
+    else if(sen[i].length >= sen[i + 1].length) {
+      longst = sen[i]
+    }
+    else {
+      longst = sen[i + 1]
+    }
+  }
+  // return sen; 
+
+}
+   
+// keep this function call here 
+console.log(LongestWord(readline()));
+*/
